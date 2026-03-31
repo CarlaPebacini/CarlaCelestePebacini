@@ -1,0 +1,109 @@
+
+body {
+  background: #f4b6b6;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 20px;
+}
+
+/* 🪟 ventanas */
+.window {
+  background: #f6c1cc;
+  border: 3px solid #000;
+  box-shadow: 6px 6px 0 #000;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.window-header {
+  background: #cdb4db;
+  padding: 5px;
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+}
+
+.window-body {
+  padding: 15px;
+}
+
+/* 🎮 botones */
+.btn {
+  display: inline-block;
+  background: #fdfd96;
+  border: 2px solid #000;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 #000;
+  margin: 5px;
+}
+
+.btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+/* 📌 nav */
+.nav-links {
+  display: flex;
+  justify-content: center;
+}
+
+/* 🧩 proyectos */
+.projects {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #a0c4ff;
+  border: 2px solid #000;
+  padding: 10px;
+  box-shadow: 3px 3px 0 #000;
+}
+
+/* 🐱 footer */
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.btn-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  background: #fdfd96;
+  border: 2px solid #000;
+  padding: 10px 15px;
+  font-family: 'Courier New', monospace;
+  cursor: pointer;
+
+  box-shadow: 3px 3px 0 #000;
+
+  display: none; /* oculto al inicio */
+}
+
+.btn-top:hover {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+.window {
+  border-radius: 12px;
+}
+
+.window-header {
+  border-radius: 10px 10px 0 0;
+}
+
+.btn {
+  border-radius: 10px;
+}
+
+.card {
+  border-radius: 10px;
+}

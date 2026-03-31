@@ -1,41 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-
-    <title>Carla Pebacini</title>
+  <meta charset="UTF-8">
+  <title>Carla Pebacini</title>
+  <link rel="stylesheet" href="styles.css">
+ 
 </head>
 
 <body>
-    <nav id="navbar">
-        <ul>
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    </nav>
 
-    <section id="about">
-        <h1>Sobre mí</h1>
-        <p>Hola, soy Carla Pebacini, una desarrolladora web apasionada por crear experiencias digitales únicas. Con habilidades en HTML, CSS y JavaScript, me dedico a construir sitios web atractivos y funcionales.</p>
-    </section>
+<!-- 🪟 NAV -->
+<nav class="window nav">
+  <div class="window-header">Menu.exe</div>
+  <div class="window-body nav-links">
+    <a href="#about" class="btn">Sobre mí</a>
+    <a href="#projects" class="btn">Proyectos</a>
+    <a href="#contact" class="btn">Contacto</a>
+  </div>
+</nav>
 
- <section id="projects">
-        <h1>Proyectos</h1>
-        <p>Estos son algunos de los proyectos en los que he trabajado:</p>
-    </section>
+<!-- 🎮 HERO -->
+<section class="window hero">
+  <div class="window-header">Inicio.exe</div>
+  <div class="window-body">
+    <h1>🎮 Bienvenido a mi portfolio</h1>
+    <p>Desarrolladora web en progreso</p>
+    <button class="btn">Start Game</button>
+  </div>
+</section>
 
-    <section id="contact">
-        <h1>Contacto</h1>
-        <p>Puedes contactarme a través de mi correo electrónico: 
-            <a href="mailto:carla.pebacini@example.com">carla.pebacini@example.com</a>
-        </p>
-    </section>
+<!-- 👩‍💻 ABOUT -->
+<section id="about" class="window">
+  <div class="window-header">SobreMi.txt</div>
+  <div class="window-body">
+    <p>Hola, soy Carla Pebacini 💻✨</p>
+    <p>Estoy aprendiendo desarrollo web y me encanta crear cosas lindas y funcionales.</p>
+  </div>
+</section>
 
+<!-- 🧩 PROYECTOS -->
+<section id="projects" class="window">
+  <div class="window-header">Proyectos.exe</div>
+  <div class="window-body projects">
+    <div class="card">🎮 Nivel 1</div>
+    <div class="card">🎮 Nivel 2</div>
+    <div class="card">🎮 Nivel 3</div>
+  </div>
+</section>
+
+<!-- 💌 CONTACTO -->
+<section id="contact" class="window">
+  <div class="window-header">Contacto.msg</div>
+  <div class="window-body">
+    <p>¿Trabajamos juntas? 💌</p>
+    <button class="btn">Enviar mensaje</button>
+  </div>
+</section>
+<section>
+    <button id="topBtn" class="btn-top">⬆ Volver arriba</button>
+
+</section>
+
+<!-- 🐱 FOOTER -->
+<footer class="footer">
+  <p>© 2026 Carla Pebacini ✦ 🐱</p>
+</footer>
+<script>
+  const btn = document.getElementById("topBtn");
+
+  window.onscroll = function() {
+    if (document.documentElement.scrollTop > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  btn.onclick = function() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+</script>
 </body>
-
-
-
 </html>
