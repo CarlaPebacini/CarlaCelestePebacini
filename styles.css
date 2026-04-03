@@ -1,21 +1,65 @@
 
 body {
   background-image : url(img/backround1.jpg);
-  background-size: cover;        /* ocupa toda la pantalla */
-  background-position: center;   /* centrado */
-  background-repeat: no-repeat;  /* no se repite */
+  background-size: cover ;        
+  background-position: center ;   
+  background-repeat: no-repeat;  
+  background-attachment: fixed;
   font-family: 'Courier New', monospace;
   margin: 0;
   padding: 20px;
 }
 
-/* 🪟 ventanas */
+.margarita {
+  position: fixed;
+  width: 90px;
+  opacity: 0.8;
+  pointer-events: auto;
+  z-index: -1;
+  animation: girar 6s linear infinite;
+}
+
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.f1 { top: 80px; left: 100px;}
+.f2 { top: 120px; right: 150px; }
+.f3 { top: 300px; left: 50px; }
+.f4 { bottom: 150px; right: 100px; }
+.f5 { bottom: 80px; left: 200px; }
+.f6 { top: 250px; right: 50px; }
+
+
+.margarita:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+
+
+/*  ventanas */
 .window {
-  background: #f6c1cc;
+  background:rgba(243, 230, 230, 0.8);
   border: 3px solid #000;
   box-shadow: 6px 6px 0 #000;
-  margin: 20px auto;
+  margin: 50px auto;
   max-width: 500px;
+}
+
+.hero {
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding: 70px;
+}
+
+.hero h1{
+  font-size: clamp(24px, 5vw, 40px);
+  line-height: 1.2;
+  word-break: break-word;
 }
 
 .window-header {
@@ -27,9 +71,10 @@ body {
 
 .window-body {
   padding: 30px;
+   
 }
 
-/* 🎮 botones */
+/* botones */
 .btn {
   display: inline-block;
   background: #fdfd96;
@@ -110,3 +155,5 @@ body {
 .card {
   border-radius: 10px;
 }
+
+
